@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_carshopping</name>
+    <creationDate>2014-12-18</creationDate>
+    <copyright>Copyright (C) 2014. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>aldo</author>
+    <authorEmail>aldopraherda@gmail.com</authorEmail>
+    <authorUrl>http://www.aldoapp.com</authorUrl>
+    <version>1.0.0</version>
+    <description></description>
+    
+    
+    
+    <install> <!-- Runs on install -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall> <!-- Runs on uninstall -->
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>carshopping.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>assets</folder>
+    </files>
+    <languages folder="languages/site">
+        
+			<language tag="en-GB">en-GB/en-GB.com_carshopping.ini</language>
+    </languages>
+    <administration>
+        <menu img="components/com_carshopping/assets/images/s_com_carshopping.png" >COM_CARSHOPPING</menu>
+        <submenu>
+            
+			<menu link="option=com_carshopping&amp;view=surveys" view="surveys" img="components/com_carshopping/assets/images/s_surveys.png" alt="Carshopping/Surveys">COM_CARSHOPPING_TITLE_SURVEYS</menu>
+			<menu link="option=com_carshopping&amp;view=shoppingprofiles" view="shoppingprofiles" img="components/com_carshopping/assets/images/s_shoppingprofiles.png" alt="Carshopping/Shoppingprofiles">COM_CARSHOPPING_TITLE_SHOPPINGPROFILES</menu>
+			<menu link="option=com_carshopping&amp;view=dilemmas" view="dilemmas" img="components/com_carshopping/assets/images/s_dilemmas.png" alt="Carshopping/Dilemmas">COM_CARSHOPPING_TITLE_DILEMMAS</menu>
+			<menu link="option=com_carshopping&amp;view=brands" view="brands" img="components/com_carshopping/assets/images/s_brands.png" alt="Carshopping/Brands">COM_CARSHOPPING_TITLE_BRANDS</menu>
+			<menu link="option=com_carshopping&amp;view=dealers" view="dealers" img="components/com_carshopping/assets/images/s_dealers.png" alt="Carshopping/Dealers">COM_CARSHOPPING_TITLE_DEALERS</menu>
+			<menu link="option=com_carshopping&amp;view=productadvisors" view="productadvisors" img="components/com_carshopping/assets/images/s_productadvisors.png" alt="Carshopping/Productadvisors">COM_CARSHOPPING_TITLE_PRODUCTADVISOR</menu>
+			<menu link="option=com_carshopping&amp;view=customers" view="customers" img="components/com_carshopping/assets/images/s_customers.png" alt="Carshopping/Customers">COM_CARSHOPPING_TITLE_CUSTOMERS</menu>
+			<menu link="option=com_carshopping&amp;view=cities" view="cities" img="components/com_carshopping/assets/images/s_cities.png" alt="Carshopping/Cities">COM_CARSHOPPING_TITLE_CITIES</menu>
+
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>carshopping.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="languages/administrator">
+            
+			<language tag="en-GB">en-GB/en-GB.com_carshopping.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_carshopping.sys.ini</language>
+        </languages>
+    </administration>
+    <plugins>
+        <plugin group="search" plugin="carshopping"/>
+    </plugins>
+    
+</extension>
+<!-- Component built by the Joomla Component Creator -->
+<!-- http://www.component-creator.com/ -->

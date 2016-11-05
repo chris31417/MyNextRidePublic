@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_CARSHOPPING_FORM_LBL_PRODUCTADVISOR_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_CARSHOPPING_FORM_LBL_PRODUCTADVISOR_CREATED_BY"
+            description="COM_CARSHOPPING_FORM_DESC_PRODUCTADVISOR_CREATED_BY"  /> 
+
+       <field name="username" type="text"                
+            label="COM_CARSHOPPING_FORM_LBL_PRODUCTADVISOR_USERNAME"
+            description="COM_CARSHOPPING_FORM_DESC_PRODUCTADVISOR_USERNAME"                                 
+            required="true"     /> 
+       <field name="email" type="email"    validate="email" class="inputbox"            
+            label="COM_CARSHOPPING_FORM_LBL_PRODUCTADVISOR_EMAIL"
+            description="COM_CARSHOPPING_FORM_DESC_PRODUCTADVISOR_EMAIL"                                 
+            required="true"     /> 
+        <field name="name" type="text"                
+            label="COM_CARSHOPPING_FORM_LBL_PRODUCTADVISOR_NAME"
+            description="COM_CARSHOPPING_FORM_DESC_PRODUCTADVISOR_NAME"                                 
+            required="true"     />          
+        <field name="year_of_experience" type="text"  required="true"               
+            label="COM_CARSHOPPING_FORM_LBL_PRODUCTADVISOR_YEAR_OF_EXPERIENCES"
+            description="COM_CARSHOPPING_FORM_DESC_PRODUCTADVISOR_YEAR_OF_EXPERIENCES"                                 
+                 />           
+         <field name="phone" type="text"                
+            label="COM_CARSHOPPING_FORM_LBL_PRODUCTADVISOR_PHONE"
+            description="COM_CARSHOPPING_FORM_DESC_PRODUCTADVISOR_PHONE"                                 
+            required="true"     />            
+          <field name="password" type="password"                
+            label="COM_CARSHOPPING_FORM_LBL_PRODUCTADVISOR_PASSWORD"
+            description="COM_CARSHOPPING_FORM_DESC_PRODUCTADVISOR_PASSWORD"                                 
+             />     
+         <field name="profile_text" type="textarea" default="default" 
+         label="COM_CARSHOPPING_FORM_LBL_PRODUCTADVISOR_PROFILE" required="true"
+         description="COM_CARSHOPPING_FORM_DESC_PRODUCTADVISOR_PROFILE" rows="10" cols="5" />        
+         
+		<field name="city_id" type="City" label="COM_CARSHOPPING_FORM_LBL_PRODUCTADVISOR_CITY"
+			description="COM_CARSHOPPING_FORM_DESC_PRODUCTADVISOR_CITY"
+			required="true" />
+		<field name="dealer_id" type="Dealer" label="COM_CARSHOPPING_FORM_LBL_PRODUCTADVISOR_DEALER"
+			description="COM_CARSHOPPING_FORM_DESC_PRODUCTADVISOR_DEALER"
+			required="true" />
+		<field name="brand_ids" type="brand" label="COM_CARSHOPPING_FORM_LBL_PRODUCTADVISOR_BRAND"
+			description="COM_CARSHOPPING_FORM_DESC_PRODUCTADVISOR_BRAND"
+			required="true" />		
+       <field name="created_time" type="timecreated" default="" 
+            label="COM_CARSHOPPING_FORM_LBL_PRODUCTADVISOR_CREATED_TIME"
+            description="COM_CARSHOPPING_FORM_DESC_PRODUCTADVISOR_CREATED_TIME"  hidden="true" /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        <option value="2">JARCHIVED</option>
+        <option value="-2">JTRASHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

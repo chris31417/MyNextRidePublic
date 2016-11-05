@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <view title="My Vehicles">
+        <message>This menu shows current user vehicles from vehiclemanager</message>
+    </view>
+</metadata>

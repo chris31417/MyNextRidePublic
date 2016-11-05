@@ -1,0 +1,107 @@
+ 
+ <html><head><meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<script type="text/javascript" src="./js/balloon.config.js"></script>
+ <script type="text/javascript" src="./js/balloon.js"></script>
+ <script type="text/javascript" src="./js/box.js"></script>
+ <script type="text/javascript" src="./js/yahoo-dom-event.js"></script>
+ <script type="text/javascript" src="./js/toggle.js"></script>
+  
+ <script type="text/javascript">
+   // white balloon with default configuration
+   // (see http://gmod.org/wiki/Popup_Balloons)
+   var balloon    = new Balloon;
+   balloon.balloonImage = 'balloon_ie.png';
+
+   // plain balloon tooltip
+   var tooltip  = new Balloon;
+   BalloonConfig(tooltip,'GPlain');
+
+   // fading balloon
+   var fader = new Balloon;
+   BalloonConfig(fader,'GFade');   
+
+   // a plainer popup box
+   var box         = new Box;
+   BalloonConfig(box,'GBox');
+
+   // a box that fades in/out
+   var fadeBox     = new Box;
+   BalloonConfig(fadeBox,'GBox');
+   fadeBox.bgColor     = 'black';
+   fadeBox.fontColor   = 'white';
+   fadeBox.borderStyle = 'none';
+   fadeBox.delayTime   = 200;
+   fadeBox.allowFade   = true;
+   fadeBox.fadeIn      = 750;
+   fadeBox.fadeOut     = 200;
+
+ </script>
+</head><body link="blue" vlink="red" bgcolor="white"  >
+<p>
+&nbsp
+</p>
+
+<h2> MyNextRide</h2>
+ </p>
+ <p align="left">
+ <table border="0">
+  <tr>
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39; Here is what we are considering  &lt;br&gt;&lt;/span&gt;&#39;)"> <img src="advisorpicture.jpg" height="100" width="85"></span></td>
+</tr>
+ 
+</table> 
+ 
+<p>&nbsp</p>
+ 
+<p align="center">
+ <table border="0">
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Buy now  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="rav4blue.jpg"  width="150" height="150"></span> 1st VEHICLE e.g. Rav4 FWD LE</td> 
+<td  class="tt" style="noborder">   INSERT PRICE</td> 
+ </tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Insert note (for PA only)  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="button.jpg"  width="40" height="30"></span> NOTES.A e.g. winter tires + remote starter</td> 
+ 
+</tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Insert note (for PA only)  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="button.jpg"  width="40" height="30"></span> NOTES.B e.g. talk to spouse</td> 
+ 
+</tr>
+ 
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Buy now  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="rav4blue.jpg"  width="75" height="75"></span> 2nd vehicle ? e.g. Rav4 AWD LE</td> 
+ <td  class="tt" style="noborder">   INSERT PRICE2</td> 
+ </tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Insert note (for PA only)  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="button.jpg"  width="40" height="30"></span> NOTES.A: e.g. with accessories as discussed</td> 
+ 
+</tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Insert note (for PA only)  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="button.jpg"  width="40" height="30"></span> NOTES.B e.g. must fit garage</td> 
+ 
+ 
+
+</tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Buy now  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="rav4blue.jpg"  width="75" height="75"></span> 3rd vehicle ? e.g. Rav4 FWD LE with Upgrade package</td> 
+
+ <td  class="tt" style="noborder">   INSERT PRICE3</td> 
+ </tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Insert note (for PA only)  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="button.jpg"  width="40" height="30"></span> NOTES.A: e.g.color to be discussed</td> 
+</tr>
+   
+ <tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Insert note (for PA only)  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="button.jpg"  width="40" height="30"></span> NOTES.B e.g. take delivery after return from trip</td> 
+</tr>
+</table>
+<p>&nbsp</p>
+<p>&nbsp </p>
+
+<p align="left">
+  <a href="dummy.php" > Return to conversation</a>
+</p>
+ 
+ 
+
+</body></html>

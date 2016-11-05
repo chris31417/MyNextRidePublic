@@ -1,0 +1,135 @@
+ 
+ <html><head><meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<script type="text/javascript" src="./js/balloon.config.js"></script>
+ <script type="text/javascript" src="./js/balloon.js"></script>
+ <script type="text/javascript" src="./js/box.js"></script>
+ <script type="text/javascript" src="./js/yahoo-dom-event.js"></script>
+ <script type="text/javascript" src="./js/toggle.js"></script>
+  
+ <script type="text/javascript">
+   // white balloon with default configuration
+   // (see http://gmod.org/wiki/Popup_Balloons)
+   var balloon    = new Balloon;
+   balloon.balloonImage = 'balloon_ie.png';
+
+   // plain balloon tooltip
+   var tooltip  = new Balloon;
+   BalloonConfig(tooltip,'GPlain');
+
+   // fading balloon
+   var fader = new Balloon;
+   BalloonConfig(fader,'GFade');   
+
+   // a plainer popup box
+   var box         = new Box;
+   BalloonConfig(box,'GBox');
+
+   // a box that fades in/out
+   var fadeBox     = new Box;
+   BalloonConfig(fadeBox,'GBox');
+   fadeBox.bgColor     = 'black';
+   fadeBox.fontColor   = 'white';
+   fadeBox.borderStyle = 'none';
+   fadeBox.delayTime   = 200;
+   fadeBox.allowFade   = true;
+   fadeBox.fadeIn      = 750;
+   fadeBox.fadeOut     = 200;
+
+ </script>
+</head><body link="blue" vlink="red" bgcolor="white"  >
+<p>
+&nbsp
+</p>
+
+<h2> MyNextRide: My Recommendations</h2>
+ </p>
+ <p align="left">
+ <table border="0">
+  <tr>
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39;Pick another customer &lt;br&gt;&lt;/span&gt;&#39;)"><img src="button.jpg"  width="40" height="30"> PRODUCT ADVISOR NAME for CUSTOMER NAME</span></td>
+</tr>
+ 
+</table> 
+ 
+<p>&nbsp</p>
+ 
+<p align="center">
+ <table border="0">
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39;Propose this vehicle&lt;br&gt;Remove from this list&lt;br&gt;&lt/span&gt;&#39;)"><img src="rav4blue.jpg"  width="45" height="45"></span> 1st VEHICLE e.g. Rav4 FWD LE</td> 
+<td  class="tt" style="noborder">   INSERT PRICE1</td> 
+ </tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Insert note (for PA)  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="button.jpg"  width="40" height="30"></span> NOTES1 e.g. winter tires + remote starter</td> 
+</tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Insert note (for PA)  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="button.jpg"  width="40" height="30"></span> MORE NOTES: e.g. not black or white</td> 
+</tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39;Propose this vehicle&lt;br&gt;Remove from this list&lt;br&gt;&lt/span&gt;&#39;)"><img src="rav4blue.jpg"  width="45" height="45"></span> 2nd vehicle ? e.g. Rav4 AWD LE</td> 
+ <td  class="tt" style="noborder">   INSERT PRICE2</td> 
+ </tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Insert note (for PA)  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="button.jpg"  width="40" height="30"></span> NOTES2: e.g. with accessories</td> 
+</tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Insert note (for PA)  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="button.jpg"  width="40" height="30"></span> MORE NOTES: e.g. not black or white</td> 
+</tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39;Propose this vehicle&lt;br&gt;Remove from this list&lt;br&gt;&lt/span&gt;&#39;)"><img src="rav4blue.jpg"  width="45" height="45"></span> 3rd vehicle ? e.g. Rav4 FWD LE with Upgrade package</td> 
+
+ <td  class="tt" style="noborder">   INSERT PRICE3</td> 
+ </tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Insert note (for PA)  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="button.jpg"  width="40" height="30"></span> NOTES3: e.g.color to be discussed</td> 
+ 
+</tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Insert note (for PA)  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="button.jpg"  width="40" height="30"></span>  MORE NOTES: price includes rustproofing</td> 
+ 
+</tr>   
+ <tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39;Propose this vehicle&lt;br&gt;Remove from this list&lt;br&gt;&lt/span&gt;&#39;)"><img src="camry.jpg"  width="45" height="45"></span> 4th VEHICLE e.g. Camry LE</td> 
+<td  class="tt" style="noborder">   INSERT PRICE4</td> 
+ </tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Insert note (for PA)  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="button.jpg"  width="40" height="30"></span> NOTES4 e.g. winter tires + remote starter</td> 
+</tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Insert note (for PA)  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="button.jpg"  width="40" height="30"></span> MORE NOTES: e.g. not black or white</td> 
+</tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39;Propose this vehicle&lt;br&gt;Remove from this list&lt;br&gt;&lt/span&gt;&#39;)"><img src="camry.jpg"  width="45" height="45"></span> 5th vehicle ? Camry SE</td> 
+ <td  class="tt" style="noborder">   INSERT PRICE5</td> 
+ </tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Insert note (for PA)  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="button.jpg"  width="40" height="30"></span> NOTES5: e.g. with accessories</td> 
+</tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Insert note (for PA)  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="button.jpg"  width="40" height="30"></span> MORE NOTES: dark interior cash price</td> 
+</tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39;Propose this vehicle&lt;br&gt;Remove from this list&lt;br&gt;&lt;/span&gt;&#39;)"><img src="camry.jpg"  width="45" height="45"></span> 6th vehicle e.g. Camry LE with value package</td> 
+
+ <td  class="tt" style="noborder">   INSERT PRICE6</td> 
+ </tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Insert note (for PA)  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="button.jpg"  width="40" height="30"></span> NOTES6: e.g.color to be discussed</td> 
+ 
+</tr>
+<tr>
+ <td  class="tt" style="noborder"> <span onmouseover="box.showTooltip(event,&#39; Insert note (for PA)  &lt;br&gt;&lt;/span&gt;&#39;)"><img src="button.jpg"  width="40" height="30"></span>  MORE NOTES: price includes rustproofing</td> 
+ 
+</tr>   
+
+</table>
+<p>&nbsp</p>
+<p>&nbsp </p>
+
+<p align="left">
+  <a href="dummy.php" > Return to conversation</a>
+</p>
+ 
+ 
+
+</body></html>

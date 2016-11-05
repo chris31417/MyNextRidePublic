@@ -1,0 +1,24 @@
+buying information
+
+deal
+1. id
+2. product advisor id
+3. customer id
+
+deal details
+1. id
+2. deal_id
+3. vehicle_id
+4. notes1
+5. notes2
+4. price
+
+recommendation
+1. id
+2. product advisor id
+3. vehicle_id
+4. notes1
+5. notes2
+4. price
+
+/home/aldo/projects/car-shopping/live/components/com_vehiclemanager/views/view_vehicle/tmpl/default.php

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_CARSHOPPING_TITLE_CUSTOMERS_PRODUCT_ADVISOR_BY_BRAND_LIST" option="View">
+        <message>
+                        <![CDATA[COM_CARSHOPPING_TITLE_CUSTOMERS_PRODUCT_ADVISOR_BY_BRAND_LIST_DESC]]>
+        </message>
+	</layout>
+</metadata>

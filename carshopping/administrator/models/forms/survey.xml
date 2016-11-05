@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+              <field name="id" type="text" default="0" label="COM_CARSHOPPING_FORM_LBL_SURVEY_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+       <field name="created_by" type="createdby" default="" 
+            label="COM_CARSHOPPING_FORM_LBL_SURVEY_CREATED_BY"
+            description="COM_CARSHOPPING_FORM_DESC_SURVEY_CREATED_BY"  /> 
+
+       <field name="q1" type="list"
+                
+            label="COM_CARSHOPPING_FORM_LBL_SURVEY_Q1"
+            description="COM_CARSHOPPING_FORM_DESC_SURVEY_Q1" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            multiple="false"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="new">New</option>
+                <option value="used">Used</option>
+                <option value="not_sure">Not Sure</option>
+        </field> 
+
+       <field name="q11" type="list"
+                
+            label="COM_CARSHOPPING_FORM_LBL_SURVEY_Q11"
+            description="COM_CARSHOPPING_FORM_DESC_SURVEY_Q11" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            multiple="false"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="sedan">SEDAN</option>
+                <option value="hatchback">HATCHBACK</option>
+                <option value="suv">SUV</option>
+                <option value="truck">TRUCK</option>
+        </field> 
+
+       <field name="q2" type="list"
+                
+            label="COM_CARSHOPPING_FORM_LBL_SURVEY_Q2"
+            description="COM_CARSHOPPING_FORM_DESC_SURVEY_Q2" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            multiple="false"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="l2k">less than 20000km/year</option>
+                <option value="l2.5k">20000−25000 km/year</option>
+                <option value="g2.5k">more than 25000km/year</option>
+        </field> 
+
+       <field name="q3" type="list"
+                
+            label="COM_CARSHOPPING_FORM_LBL_SURVEY_Q3"
+            description="COM_CARSHOPPING_FORM_DESC_SURVEY_Q3" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            multiple="false"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="rep">replacing a vehicle</option>
+                <option value="buy">buying an additional vehicle</option>
+        </field> 
+
+       <field name="q4" type="text"
+                
+            label="COM_CARSHOPPING_FORM_LBL_SURVEY_Q4"
+            description="COM_CARSHOPPING_FORM_DESC_SURVEY_Q4" 
+                
+                
+                 /> 
+
+       <field name="q5" type="list"
+                
+            label="COM_CARSHOPPING_FORM_LBL_SURVEY_Q5"
+            description="COM_CARSHOPPING_FORM_DESC_SURVEY_Q5" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            multiple="false"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="up">upgrading</option>
+                <option value="dowm">downsizing</option>
+                <option value="new">just want a newer vehicle</option>
+        </field> 
+
+       <field name="q6" type="list"
+                
+            label="COM_CARSHOPPING_FORM_LBL_SURVEY_Q6"
+            description="COM_CARSHOPPING_FORM_DESC_SURVEY_Q6" 
+                
+                
+                
+            menu_published="0"
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="commuting">commuting</option>
+                <option value="trip">long trips</option>
+                <option value="family">family all purpose</option>
+                <option value="work">work</option>
+                <option value="sometime">I dont drive much</option>
+        </field> 
+
+       <field name="q7" type="list"
+                
+            label="COM_CARSHOPPING_FORM_LBL_SURVEY_Q7"
+            description="COM_CARSHOPPING_FORM_DESC_SURVEY_Q7" 
+                
+                
+                
+            multiple="false"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="dealer">loyal to one dealership</option>
+                <option value="brand">loyal to one brand</option>
+                <option value="domestic">usually buy domestic</option>
+                <option value="import">usually buy imports</option>
+        </field> 
+
+       <field name="q8" type="textarea"
+                
+            label="COM_CARSHOPPING_FORM_LBL_SURVEY_Q8"
+            description="COM_CARSHOPPING_FORM_DESC_SURVEY_Q8" 
+                
+                
+                
+            menu_published="0"
+            cols="100"
+            rows="8"
+            filter="raw"
+            option_on="Yes"
+            option_off="Yes" /> 
+
+       <field name="q9" type="list"
+                
+            label="COM_CARSHOPPING_FORM_LBL_SURVEY_Q9"
+            description="COM_CARSHOPPING_FORM_DESC_SURVEY_Q9" 
+                
+                
+                
+            multiple="false"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="myself">just for myself</option>
+                <option value="someone">I’m shopping for someone else</option>
+                <option value="family">family vehicle</option>
+        </field> 
+
+       <field name="q10" type="list"
+                
+            label="COM_CARSHOPPING_FORM_LBL_SURVEY_Q10"
+            description="COM_CARSHOPPING_FORM_DESC_SURVEY_Q10" 
+                
+                
+                
+            multiple="false"
+            option_on="Yes"
+            option_off="Yes">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="dprice">Depends on price</option>
+        </field> 
+
+       <field name="created_time" type="timecreated" default="" 
+            label="COM_CARSHOPPING_FORM_LBL_SURVEY_CREATED_TIME"
+            description="COM_CARSHOPPING_FORM_DESC_SURVEY_CREATED_TIME"  hidden="true" /> 
+
+         <field
+        name="state"
+        type="list"
+        label="JSTATUS"
+        description="JFIELD_PUBLISHED_DESC"
+        class="inputbox"
+        size="1"
+        default="1">
+        <option value="1">JPUBLISHED</option>
+        <option value="0">JUNPUBLISHED</option>
+        <option value="2">JARCHIVED</option>
+        <option value="-2">JTRASHED</option>
+    </field> 
+
+                        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

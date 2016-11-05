@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="Single User Vehicles">
+        <message><![CDATA[Displays a selected category of a application]]></message>
+    </layout>
+
+    <fields name="params">
+        <fieldset name="params" addfieldpath="/administrator/components/com_vehiclemanager/elements" label="Params">
+            <field name="back_button" type="list" label="Back Button" required="false" description="Show/Hide a Back Button">
+                <option value="">Use Global</option>
+                <option value="0">Hide</option>
+                <option value="1">Show</option>
+            </field>
+            <field name="username" type="user" default="1" class="inputbox" label="User" multiple ="false" size="1" items="true" required="true" description="Choose user from the list" />
+        </fieldset>
+    </fields>
+</metadata>
+
+

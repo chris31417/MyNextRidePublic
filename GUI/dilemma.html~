@@ -1,0 +1,106 @@
+ 
+ <html><head><meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<script type="text/javascript" src="./js/balloon.config.js"></script>
+ <script type="text/javascript" src="./js/balloon.js"></script>
+ <script type="text/javascript" src="./js/box.js"></script>
+ <script type="text/javascript" src="./js/yahoo-dom-event.js"></script>
+ <script type="text/javascript" src="./js/toggle.js"></script>
+  
+ <script type="text/javascript">
+   // white balloon with default configuration
+   // (see http://gmod.org/wiki/Popup_Balloons)
+   var balloon    = new Balloon;
+   balloon.balloonImage = 'balloon_ie.png';
+
+   // plain balloon tooltip
+   var tooltip  = new Balloon;
+   BalloonConfig(tooltip,'GPlain');
+
+   // fading balloon
+   var fader = new Balloon;
+   BalloonConfig(fader,'GFade');   
+
+   // a plainer popup box
+   var box         = new Box;
+   BalloonConfig(box,'GBox');
+
+   // a box that fades in/out
+   var fadeBox     = new Box;
+   BalloonConfig(fadeBox,'GBox');
+   fadeBox.bgColor     = 'black';
+   fadeBox.fontColor   = 'white';
+   fadeBox.borderStyle = 'none';
+   fadeBox.delayTime   = 200;
+   fadeBox.allowFade   = true;
+   fadeBox.fadeIn      = 750;
+   fadeBox.fadeOut     = 200;
+
+ </script>
+</head><body link="blue" vlink="red" bgcolor="white"  >
+<p>
+&nbsp
+</p>
+&nbsp
+&nbsp
+
+<p >
+<h2> Welcome to MyNextRide </h2>
+ </p>
+ <p align="left">
+ <table border="0">
+  <tr>
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39;Thanks for choosing MyNextRide. Everyone has problems right? No worries - we are problem solvers - just give us a clue &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="called-shot-home-run-babe-ruth.jpg" height="120" width="140"></span></td>
+</tr>
+<tr>
+ <td class="tt"> <h5> hint: hover mouse cursor over the image to see advice </h5></td>
+</tr>
+ 
+</table> 
+ 
+
+<p>&nbsp</p>
+<p>&nbsp</p>
+<p align="center">
+ <table border="1">
+  <tr>
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39;  Would you worry about wasting a doctors time if you were ill? We are professionals and are here to find you something which suits your needs and budget. If there is a real problem you can count on us to be upfront about it. Click the car icon to let us know that you want to discuss this; &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="bluecar.jpg" height="30" width="50"></span> <b> I dont want to waste your time</b></td>
+  <td class="tt"><span onmouseover="box.showTooltip(event,&#39; This is a situation we encounter often. Our financial professionals will go the extra mile to iron out any financial details and will be upfront about what is possible. Ask a sales advisor for further details. Click the car icon to let us know that you want to discuss this; &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="greencar.jpg" height="30" width="50"></span><b> I owe money on my last car</b></td>
+</tr>
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39; Congratulations! It is so nice to be able help people on an important occasion in their lives. We will do our very best to make sure it is a good experience. Click the car icon to let us know that you want to discuss this; &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="greencar.jpg" height="30" width="50"></span><b>This is my first car</b></td>
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39; There are many reasons why people might pay slightly different prices, such as province of registration or a history of loyalty to a brand or dealership.  Car shoppers have always done some negotiation on the price.  If that is not your thing you may find MyNextRide can smooth out the road. Click the car icon to let us know that you want to discuss this &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="bluecar.jpg" height="30" width="50"></span> <b> Is someone else getting a better price? </b></td>
+
+  <tr>
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39;   We understand that you have a busy life, and perhaps you divvy up the chores in your household so that one of you does the advance work.  But shopping for someone else\'s car can be like shopping for someone else\'s shoes.  If they do not fit, you are not doing them a favour. If someone is going to drive the car, it just makes sense to bring them in sooner rather than later. If you can do that we promise that the time and hassle you save will be worth the effort. But click the car icon to let us know that you want to discuss this; &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="bluecar.jpg" height="30" width="50"></span> <b> I'm shopping for someone else</b></td>
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39;  The car industry is extremely competitive and modern production techniques are extremely efficient.  The market keeps everyone honest.  The fair price of a vehicle is determined by the quality of the vehicle and the demand for it.   Click the car icon to let us know that you want to discuss this ; &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="greencar.jpg" height="30" width="50"></span> <b> Your car X costs more than car Y</b></td>
+ </tr>
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39;  Whether you are spending 5 thousand or 50 thousand dollars on a vehicle, it is a big decision.  If you plan to  spend 25 thousand dollars on a car and skip a 10 minute test drive that could save you a bad decision - you are valuing your time at 41  dollars and 65 cents per second. Really? Nice work if you can get it! Take it from us - you will sleep easier if you try it out first. But click the car icon to let us know that you want to discuss this; &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="greencar.jpg" height="30" width="50"></span><b> I dont have time to test drive</b></td>
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39;  No one likes to pay interest. But there are usually a few models available at 0 percent, or low interest rate financing. Otherwise remember to work out what you actually pay. A point or two of interest rate will likely amount to less than you think. Click the car icon to let us know that you want to discuss this &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="bluecar.jpg" height="30" width="50"></span> <b> I dont want to pay any interest </b></td>  
+
+<tr>
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39;   We are sorry to hear that and hope everyone was ok.  There may be a period of uncertainty while insurance matters are cleared up. In the meantime you should know that car loans are open and can be paid off at any time. Therefore there is no compelling financial reason to wait for the insurance to clear before getting a replacement car. Click here to let us know that you want to discuss this; &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="bluecar.jpg" height="30" width="50"></span> <b> I just wrote my car off</b></td>
+
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39; We understand that customers need to do some due diligence when looking at several models of vehicle. For the most part, those feature by features comparisons already exist on the internet. What a spreadsheet cannot do is represent your feelings about the vehicle.  These are important because it is likely going to be in your driveway for years. Click the car icon to let us know that you want to discuss this; &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="greencar.jpg" height="30" width="50"></span> <b> We are making a spreadsheet of cars </b></td>
+ </tr>
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39; No problem! Lets take the vehicle to your house and try it out. But click the car icon to let us know that you want to discuss this; &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="greencar.jpg" height="30" width="50"></span><b> Will this car fit in my garage?</b></td>
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39;   Would you just drop by your dentist? Buying a vehicle is an even bigger decision! Appointments are not just for the product advisor. They are for the comfort and convenience of other customers like yourself who also deserve excellent wait-free unhurried service. Do product advisors take walk-ins? Sure, but do yourself a favour and give them a heads up before you arrive.  Click the car icon to let us know that you want to discuss this; &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="bluecar.jpg" height="30" width="50"></span> <b> Can I drop by next week?</b></td>  
+
+<tr>
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39;   New? Probably the vehicle you want is somewhere in the warehouse or in our regional network. Sometimes shortages can develop - but why not let us do the legwork? Come see a human and we will figure it out. Used? Decide what you want, and when you see it, snap it up. Used cars are one of a kind. Click the car icon to let us know that you want to discuss this; &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="bluecar.jpg" height="30" width="50"></span> <b> No one seems to have the vehicle I want</b></td>
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39;   When you come to a dealership in person, this tells the seller you are ready to do business and are not just fishing. For this reason the best price is always when you come to the dealership. If you prefer to deal online, we suggest you try our chose-a-price service. Click the car icon to let us know that you want to discuss this ; &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="greencar.jpg" height="30" width="50"></span> <b> Give me your best price </b></td>
+ </tr>
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39; Modern cars have 50000 moving parts and are worth thousands of dollars, so value can only be roughly estimated from books alone. We wish life were simpler, but there is no substitute for having the vehicle examined by an expert, in person. Click the car icon to let us know that you want to discuss this; &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="greencar.jpg" height="30" width="50"></span><b> Whats my trade worth?</b></td>
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39;  We are sorry to hear that. Nobody is perfect. Any dealer participating in MyNextRide is committed to the highest levels of customer service. If you had a bad experience we want to hear about it.  Otherwise please contact one of our experienced and friendly product advisors.   Click the car icon to let us know that you want to discuss this; &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="bluecar.jpg" height="30" width="50"></span> <b> I had a bad experience with a sales person</b></td>  
+ </tr>
+<tr>
+<td class="tt"><span onmouseover="box.showTooltip(event,&#39;   Even if the car is on the lot it will take about 2 days to get it ready for delivery.  It is a bit more complex than a supermarket checkout, but like a supermarket checkout, cars are queued for delivery in order. Otherwise delays can vary from a week or two if it is in the warehouse, to 3 to 4 months for a factory order. Click the car icon to let us know that you want to discuss this; &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="bluecar.jpg" height="30" width="50"></span> <b> How long will it take to get the car?</b> </td>
+ 
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39;   New cars are usually sold in mint condition with 5 to 125 km on them.  For this to be the case dealers must ship the cars from the factory on a delivery truck and handle them with care.  For full disclosure, this cost is itemized for the customer. If you hate the freight, consider buying a used vehicle. But click the car icon to let us know that you want to discuss this; &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="greencar.jpg" height="30" width="50"></span><b> Why do I have to pay freight?</b></td>
+  
+ 
+</table>
+   
+</p>
+ <a href="dummy.php" > Did we miss something? Maybe you need to talk to a human</a>
+
+
+</body></html>

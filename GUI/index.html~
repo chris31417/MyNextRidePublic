@@ -1,0 +1,83 @@
+ 
+ <html><head><meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<script type="text/javascript" src="./js/balloon.config.js"></script>
+ <script type="text/javascript" src="./js/balloon.js"></script>
+ <script type="text/javascript" src="./js/box.js"></script>
+ <script type="text/javascript" src="./js/yahoo-dom-event.js"></script>
+ <script type="text/javascript" src="./js/toggle.js"></script>
+  
+ <script type="text/javascript">
+   // white balloon with default configuration
+   // (see http://gmod.org/wiki/Popup_Balloons)
+   var balloon    = new Balloon;
+   balloon.balloonImage = 'balloon_ie.png';
+
+   // plain balloon tooltip
+   var tooltip  = new Balloon;
+   BalloonConfig(tooltip,'GPlain');
+
+   // fading balloon
+   var fader = new Balloon;
+   BalloonConfig(fader,'GFade');   
+
+   // a plainer popup box
+   var box         = new Box;
+   BalloonConfig(box,'GBox');
+
+   // a box that fades in/out
+   var fadeBox     = new Box;
+   BalloonConfig(fadeBox,'GBox');
+   fadeBox.bgColor     = 'black';
+   fadeBox.fontColor   = 'white';
+   fadeBox.borderStyle = 'none';
+   fadeBox.delayTime   = 200;
+   fadeBox.allowFade   = true;
+   fadeBox.fadeIn      = 750;
+   fadeBox.fadeOut     = 200;
+
+ </script>
+</head><body link="blue" vlink="red" bgcolor="goldenrod"  >
+<p>
+&nbsp
+</p>
+&nbsp
+&nbsp
+
+<p >
+<h2> Welcome to MyNextRide </h2>
+ </p>
+ <p align="left">
+ <table border="1">
+  <tr>
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39;Thanks for choosing MyNextRide. Please help us help you by giving us some clues about what you need; &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="heresthekey.jpg" height="120" width="80"></span></td>
+ 
+</tr>
+ <tr> <a href="dummy.php" > Ready to go? Click here to get started </a>
+</tr>
+ 
+</table> 
+<p align="center">
+Please tell us a little about yourself and what you are looking for.
+<p align="center">
+  
+<img src="shopping_profile.jpg" height="300" width="450">
+</p>
+
+<p>&nbsp</p>
+<p>&nbsp</p>
+<p align="center">
+ <table border="1">
+  <tr>
+ <td class="tt"><span onmouseover="box.showTooltip(event,&#39;What you enter here will be seen by all product advisors. Your survey data will only be seen by the advisors you choose to talk to; &lt;br&gt;&lt;/span&gt;&#39;,1,275)"> <img src="bluecar.jpg" height="80" width="120"></span></td>
+ 
+</tr>
+ <tr> <a href="dummy.php" > Ready to go? Click here to get started </a>
+</tr>
+ 
+</table>
+   
+</p>
+ 
+
+
+</body></html>
